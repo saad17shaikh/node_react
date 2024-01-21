@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.send("Hello App is running on port 5000");
 });
 
+app.get("/api/profile", (req, res) => {
+  res.send(["saad", "shaikh"]);
+});
+
 app.listen(port, () => {
   console.log(`App is listening on port ${port}`);
 });
